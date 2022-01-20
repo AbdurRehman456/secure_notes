@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackish"
+    tools:context=".EditActivity">
+
+    <ImageButton
+        android:id="@+id/update"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/back_btn">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/idget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update"
+        android:visibility="gone">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/titleAfterClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update"
+        android:layout_marginTop="25sp"
+        android:hint="Title will show here when click on list item"
+        android:text="Abdul khan is goo"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="italic">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/descriptionAfterClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleAfterClick"
+        android:text="Description will show here when click on list item"
+        android:textColor="@color/white">
+
+    </EditText>
+</RelativeLayout>
